@@ -42,3 +42,29 @@ header {
     width: 3em;
   }
 }
+
+/* card style (about company) */
+.content{
+  display: flex;
+}
+.card {
+  margin-inline: 1em;
+  width: 15em;
+  text-align: center;
+  transition: 200ms;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.card:hover,
+.back-card {
+  transform: rotatey(0.5turn);
+}
+.front-card,
+.back-card {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+}
+.back-card {
+  z-index: -1;
+}
