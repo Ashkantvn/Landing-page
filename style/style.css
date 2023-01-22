@@ -1,3 +1,4 @@
+/* global style */
 :root {
   padding: 0;
   margin: 0;
@@ -15,15 +16,29 @@ html {
   background-image: -moz-linear-gradient(45deg, #bcaaa4, #6d4c41, #3e2723);
   background-image: -webkit-linear-gradient(45deg, #bcaaa4, #6d4c41, #3e2723);
   background-repeat: no-repeat;
-  background-size:200%;
+  background-size: 200%;
   background-position: right;
-  animation: bg-animation 12s  infinite alternate;
+  animation: bg-animation 12s infinite alternate;
 }
 
 @keyframes bg-animation {
   0% {
-    background-position:  right;
-  }100%{
+    background-position: right;
+  }
+  100% {
     background-position: left;
+  }
+}
+
+/* header style  */
+header {
+  margin: 7em;
+}
+@media screen and (width <= 767px) {
+  header {
+    margin: 5.5em;
+  }
+  h1 {
+    width: 3em;
   }
 }
